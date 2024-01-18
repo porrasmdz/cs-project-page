@@ -54,7 +54,7 @@ function SubsidiaryCreatePage({ params }) {
             id="name"
             name="name"
             type="text"
-            placeholder="Escriba su nombre"
+            placeholder="Escriba nombre de la sucursal"
             {...register("name", { required: true })}
           />
           {errors.name && (
@@ -80,7 +80,7 @@ function SubsidiaryCreatePage({ params }) {
             <span className="text-red-600">Este campo es requerido</span>
           )}
         </div>
-        <button className="btn btn-blue m-3 my-4">Guardar</button>
+        <button className="btn bg-indigo-300 m-3 my-4">Guardar</button>
       </div>
     </form>
   );

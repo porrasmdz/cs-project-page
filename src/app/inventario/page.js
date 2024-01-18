@@ -33,11 +33,7 @@ function InventoriesPage() {
       {/* Table */}
       <OrdersTable selectedItems={handleSelectedItems} />
 
-      <div className="grid grid-cols-12 gap-6">
-        {inventories.map((subsi) => (
-          <></> // <InventoryCard className="col-span-4" key={subsi.id} subsidiary={subsi} />
-        ))}
-      </div>
+      
     </>
   );
 }

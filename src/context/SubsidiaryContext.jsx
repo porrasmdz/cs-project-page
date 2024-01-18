@@ -12,7 +12,29 @@ export const useSubsidiaries = () => {
 };
 
 export const SubsidiaryProvider = ({ children }) => {
-  const [subsidiaries, setSubsidiaries] = useLocalStorage("subsidiaries", [])
+  const [subsidiaries, setSubsidiaries] = useLocalStorage("subsidiaries", [
+    {
+      id: 1,
+      name: "Compañía ABC",
+      ruc: "09431432001"
+    },{
+      id: 2,
+      name: "Compañía XYZ",
+      ruc: "09422444001"
+    },{
+      id: 3,
+      name: "Compañía VWZ",
+      ruc: "03431122001"
+    },{
+      id: 4,
+      name: "Compañía PWC",
+      ruc: "09771433001"
+    },{
+      id: 5,
+      name: "Compañía 123",
+      ruc: "09121212001"
+    },
+  ])
  
   
 
